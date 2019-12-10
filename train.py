@@ -15,6 +15,6 @@ if __name__ == '__main__':
         sys.exit(1)
 
     input, output1, output2 = sys.argv[1:4]
-    model = Word2Vec(LineSentence(input), size=400, window=5, min_count=5, workers=multiprocessing.cpu_count())
+    model = Word2Vec(LineSentence(input), size=100, window=2, min_count=5, workers=multiprocessing.cpu_count())
     model.save(output1)
     model.wv.save_word2vec_format(output2, binary=False)
