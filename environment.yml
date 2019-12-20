@@ -6,4 +6,8 @@ dependencies:
   - notebook
   - jupyter
   - pandas
+  - pip:
+    - gensim==3.8.0
+    - jieba==0.39
+    - OpenCC==0.2
 
